@@ -182,14 +182,12 @@
 
 
         </div>
-        <div class="container" style="background-color: #e28d2e;width:300px;height:380px;margin-top: 50px;" ng-show="register.successmsg">
+        <div class="container" style="background-color: #e28d2e;width:300px;height:200px;margin-top: 50px;" ng-show="register.successmsg">
             <h4>Copy and Share this link </h4>
             <textarea  style="background-color:cyan;color:black;width:270px;">{{register.pub_url}}</textarea>
-            <p style="margin-left: 60px;color:green;">Share on Whatsapp or Facebook.</p>
-            <a style="margin-left: 20px;" onclick="location.href=this.href+scrt_var;return false;" href="whatsapp://send" data-text="Here is a wish for you. Check it and create your own" data-href ="" class="wa_btn wa_btn_m" style="display:none">Whatsapp</a>
-            <script language="javascript" type="text/javascript">
-                var scrt_var = {{register.pub_url}};
-            </script>
+            <p style="margin-left: 20px;color:green;">Share on Whatsapp or Facebook.</p>
+            <a style="margin-left: 20px;"  href="whatsapp://send" data-text="Here is a wish for you. Check it and create your own" data-href ="https://wishing-app.herokuapp.com/createwish" class="wa_btn wa_btn_m" style="display:none">Whatsapp</a>
+            <button class="enjoy-css" style="background-color: #2e6da4;background:rgba(74,70,186,1)" ng-click="register.routechan();">Sample Wish</button></a>
         </div>
     </div>
 </div>
@@ -209,13 +207,5 @@
     <i class="fa fa-linkedin w3-hover-opacity"         ><a href="https://www.linkedin.com/in/abhinav-gupta-774a3512a/"></a></i>
     <p>Powered by <a  ng-click="register.routechan();" ><i>webbern</i></a></p>
 </footer>
-<script type="text/javascript">if(typeof wabtn4fg==="undefined"){wabtn4fg=1;h=document.head||document.getElementsByTagName("head")[0],s=document.createElement("script");s.type="text/javascript";s.src="url/to/your/button/whatsapp-button.js";h.appendChild(s);}</script>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.10&appId=313983899013671";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 </body>
