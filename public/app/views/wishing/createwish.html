@@ -186,10 +186,11 @@
             <h4>Copy and Share this link </h4>
             <textarea  style="background-color:cyan;color:black;width:270px;">{{register.pub_url}}</textarea>
             <p style="margin-left: 60px;color:green;">Share on Whatsapp or Facebook.</p>
-            <a style="margin-left: 20px;" href="whatsapp://send" data-text="Here is a wish for you. Check it and create your own" data-href="{{register.pub_url}}" class="wa_btn wa_btn_m" style="display:none">Whatsapp</a>
-            <a style="margin-left: 20px;" href="whatsapp://send" data-text="Here is a wish for you. Check it and create your own" class="wa_btn wa_btn_s" data-href="{{register.pub_url}}" onClick="ga('send', 'event', { eventCategory: 'Social', eventAction: 'Share', eventLabel: 'WhatsAppShare', eventValue: 0});" >
-                <button class="enjoy-css" style="background-color: #2e6da4;background:rgba(74,70,186,1)">Facebook</button></a>
-            <div style="margin-left: 20px;" class="fb-share-button" data-href="{{register.pub_url}}" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwishing-app.herokuapp.com%2Fcreatewish&amp;src=sdkpreparse">Share</a></div>
+            <a style="margin-left: 20px;" onclick="location.href=this.href+scrt_var;return false;" href="whatsapp://send" data-text="Here is a wish for you. Check it and create your own" data-href ="" class="wa_btn wa_btn_m" style="display:none">Whatsapp</a>
+            <div style="margin-left: 20px;" class="fb-share-button" data-href="getval();" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwishing-app.herokuapp.com%2Fcreatewish&amp;src=sdkpreparse"> <button class="enjoy-css" style="background-color: #2e6da4;background:rgba(74,70,186,1)">Facebook</button></a></div>
+            <script language="javascript" type="text/javascript">
+                var scrt_var = {{register.pub_url}};
+            </script>
         </div>
     </div>
 </div>
