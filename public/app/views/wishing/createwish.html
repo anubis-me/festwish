@@ -176,20 +176,17 @@
                  <div class="form-group" >
                     <button type="submit" class="btn btn-primary btn-lg btn-block login-button" style="background-color: #e28d2e">Create Wish</button>
                 </div>
-
             </form>
 
-
-
         </div>
+
         <div class="container" style="background-color: #e28d2e;width:300px;height:200px;margin-top: 50px;" ng-show="register.successmsg">
             <h4>Copy and Share this link </h4>
             <textarea  style="background-color:cyan;color:black;width:270px;">{{register.pub_url}}</textarea>
             <p style="margin-left: 20px;color:green;">Share on Whatsapp or Facebook.</p>
-            <a style="margin-left: 20px;"  href="whatsapp://send" data-text="Here is a wish for you. Check it and create your own" class="wa_btn wa_btn_s" data-href="https://wishing-app.herokuapp.com/createwish" onClick="ga('send', 'event', { eventCategory: 'Social', eventAction: 'Share', eventLabel: 'WhatsAppShare', eventValue: 0});" >
-                <button class="enjoy-css">WhatsApp</button></a>
-            <a style="margin-left: 20px;" class="wa_btn wa_btn_s" > <button class="enjoy-css" style="background-color: #2e6da4;background:rgba(74,70,186,1)" ng-click="register.routechan();">Sample Wish</button></a>
+            <a style="margin-left: 20px;"  href="whatsapp://send" data-text="Here is a wish for you. Check it and create your own" class="wa_btn wa_btn_s" data-href="https://wishing-app.herokuapp.com/createwish" onClick="ga('send', 'event', { eventCategory: 'Social', eventAction: 'Share', eventLabel: 'WhatsAppShare', eventValue: 0});" ><button class="enjoy-css">WhatsApp</button></a>
         </div>
+
     </div>
 </div>
 <!--
