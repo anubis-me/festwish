@@ -1,7 +1,7 @@
 {
-  "name": "getout",
+  "name": "Wishing App",
   "version": "1.0.0",
-  "description": "Entrepreneur",
+  "description": "Wish for festival",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubis-me/getout.git"
+    "url": "git+https://github.com/anubis-me/wish.git"
   },
   "keywords": [
     "Art",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/anubis-me/getout/issues"
   },
-  "homepage": "https://github.com/anubis-me/getout#readme",
+  "homepage": "https://github.com/anubis-me/wish#readme",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.1",

@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="333879a4-1a05-4f30-90f8-f392b0873297" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/type/type1.html" afterPath="$PROJECT_DIR$/public/app/views/type/type1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/type/type2.html" afterPath="$PROJECT_DIR$/public/app/views/type/type2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/wishing/createwish.html" afterPath="$PROJECT_DIR$/public/app/views/wishing/createwish.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/app/views/wishing/samplewish.html" afterPath="$PROJECT_DIR$/public/app/views/wishing/samplewish.html" />
-    </list>
+    <list default="true" id="333879a4-1a05-4f30-90f8-f392b0873297" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -709,12 +704,12 @@
       <workItem from="1506229852028" duration="50340000" />
       <workItem from="1506288396763" duration="14168000" />
       <workItem from="1506304084435" duration="5634000" />
-      <workItem from="1506340361354" duration="12650000" />
+      <workItem from="1506340361354" duration="12901000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225015000" />
+    <option name="totallyTimeSpent" value="225266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1378" height="754" extended-state="0" />
