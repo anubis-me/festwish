@@ -15,16 +15,7 @@ var app=angular.module('playerRoute',['ngRoute'])
                 controller  :'createCtrl',
                 controllerAs:'register'
             })
-            //adds signup page in index page
-            .when('/sharewish',{
-                templateUrl :'app/views/wishing/sharewish.html'
-            })
-            //player info
-            .when('/view',{
-                templateUrl: 'app/views/type/view.html',
-                controller  :'createCtrl',
-                controllerAs: 'register'
-            })
+
             //player info
             .when('/type1',{
                 templateUrl: 'app/views/type/type1.html',

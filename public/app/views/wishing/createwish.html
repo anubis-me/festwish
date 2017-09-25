@@ -1,8 +1,7 @@
 
     <!-- Website CSS style -->
     <link rel="stylesheet" type="text/css" href="assets/css/create/main.css">
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
 
 <style>
     body{
@@ -10,13 +9,13 @@
     }
     .animation {
         font-family: 'Gochi Hand', cursive;
-        font-size: 4em;
+        font-size: 3.5em;
         position: relative;
         top: 0px;
         left: 0;
         right: 0;
         bottom: 0;
-        height: 130px;
+        height: 100px;
         margin: auto;
         display: block;
 
@@ -24,7 +23,7 @@
 
         color:#f39c12;
         text-align: center;
-        line-height: 100px;
+        line-height: 70px;
         text-shadow: 0 1px 0 #CCC,
         0 2px 0 #CCC,
         0 3px 0 #CCC,
@@ -106,7 +105,7 @@
 <body>
 
 <div class="container">
-    <div class="row main">
+    <div class="row main"  style="padding:-50px;">
 
         <div class="panel-heading">
             <div class="panel-title text-center">
@@ -119,11 +118,11 @@
             <form   name="signupForm" class="form-horizontal" ng-submit="register.regwish(regdata);"  >
 
                 <div class="form-group" >
-                    <label for="name" class="cols-sm-2 control-label">Festival</label>
+                    <label for="name" class="cols-sm-2 control-label">Select Festival</label>
 
                     <div class="cols-sm-10">
 
-                        <div class="input-group">
+                        <div class="input-group"  >
                             <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
                             <select type="text" class="form-control" name="name" id="name"  placeholder="Festival" ng-model="register.regdata.fest" required>
                                 <option value="Happy Navratri">Navratri</option>
@@ -160,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" style="margin-top: -20px;">
                     <label for="username" class="cols-sm-2 control-label">Message</label>
                     <div class="cols-sm-10">
 
@@ -174,16 +173,17 @@
                 </div>
 
                  <div class="form-group" >
-                    <button type="submit" class="btn btn-primary btn-lg btn-block login-button" style="background-color: #e28d2e">Create Wish</button>
+                     <button type="submit" class="btn btn-lg btn-block login-button" style="background-color:#f0ad4e;color: black;border-color:black;"><b>Create Wish</b></button>
                 </div>
             </form>
 
         </div>
 
-        <div class="container" style="background-color: #e28d2e;width:300px;height:200px;margin-top: 50px;" ng-show="register.successmsg">
-            <h4>Copy and Share this link </h4>
-            <textarea  style="background-color:cyan;color:black;width:270px;">{{register.pub_url}}</textarea>
-            <p style="margin-left: 20px;color:green;">Share on Whatsapp or Facebook.</p>
+        <div  class="main-login main-center"  style="margin-top: 50px;" ng-show="register.successmsg">
+            <h4><b>Copy and Share this link</b> </h4>
+            <textarea class="input-group" style="background-color:cyan;color:black;bold;width: 101%;height:100px;">{{register.pub_url}}</textarea>
+
+            <p  style="margin-left: 20px;color:green;">Share on Whatsapp & Facebook</p>
         </div>
 
     </div>
@@ -195,13 +195,13 @@
     </button>
 </div> -->
 
-<footer class="w3-container w3-teal w3-center w3-margin-top"  style="background-color:#e28d2e!important;">
+<footer class="w3-container w3-teal w3-center w3-margin-top"  style="background-color:#e28d2e!important;padding: -10px 0 -10px;">
     <p>Find me on social media.</p>
-    <i class="fa fa-facebook-official w3-hover-opacity"><a href="https://www.facebook.com/abhinav3006gupta" target="_blank"></a></i>
-    <i class="fa fa-instagram w3-hover-opacity"        ><a href="https://www.instagram.com/abhinav_qp/" target="_blank"></a></i>
-    <i class="fa fa-snapchat w3-hover-opacity"         ><a href="https://www.snapchat.com/add/abhinav3006gu" target="_blank"></a></i>
-    <i class="fa fa-twitter w3-hover-opacity"          ><a href="https://twitter.com/Abhi_now3006" target="_blank"></a></i>
-    <i class="fa fa-linkedin w3-hover-opacity"         ><a href="https://www.linkedin.com/in/abhinav-gupta-774a3512a/"></a></i>
+    <a href="https://www.facebook.com/abhinav3006gupta" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+   <a href="https://www.instagram.com/abhinav_qp/" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.snapchat.com/add/abhinav3006gu" target="_blank"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Abhi_now3006" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+   <a href="https://www.linkedin.com/in/abhinav-gupta-774a3512a/"> <i class="fa fa-linkedin w3-hover-opacity"></i></a>
     <p>Powered by <a  ng-click="register.routechan();" ><i>webbern</i></a></p>
 </footer>
 
